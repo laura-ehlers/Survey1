@@ -1,0 +1,117 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body id="main">
+<article id="article">
+    <h1 id="title">Survey</h1>
+    <p id="description">Let's settle this once and for all - Which Brooklyn 99 character is the best?</p>
+    <form id="survey-form">
+        <select id="dropdown">
+            <option selected disabled>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="prefer">Prefer not to say</option>
+        </select> <br>
+
+        <label id="name-label" for="name">Name</label><br>
+        <input class="myinputs" type="text" id="name" name="name" placeholder="Input your Name" required><br>
+        <label id="email-label" for="email">E-Mail</label><br>
+        <input class="myinputs" type="email" id="email" name="email" placeholder="Input your E-Mail" required><br>
+        <label id="number-label" for="number">Age</label><br>
+        <input class="myinputs" type="number" id="number" name="age" min="16" max="130" placeholder="Input your Age"
+               required><br>
+
+        <aricle id="questions">
+            <section id="favourite">
+
+                <section id="boxes">
+                    <p class="question">Select your favourite character:</p>
+                    <label class="radiobox" for="jake">Jake
+                        <input type="radio" id="jake" name="character" value="jake"
+                               checked>
+                        <span class="checkdot"></span>
+                    </label>
+
+                    <label class="radiobox" for="amy">Amy
+                        <input type="radio" id="amy" name="character" value="amy">
+
+                        <span class="checkdot"></span>
+                    </label>
+
+                    <label class="radiobox" for="charles">Charles
+                        <input type="radio" id="charles" name="character" value="charles">
+                        <span class="checkdot"></span>
+                    </label>
+
+                    <label class="radiobox" for="rosa">Rosa
+                        <input type="radio" id="rosa" name="character" value="charles">
+
+                        <span class="checkdot"></span>
+                    </label>
+                    <label class="radiobox" for="gina">Gina
+                        <input type="radio" id="gina" name="character" value="gina">
+
+                        <span class="checkdot"></span>
+                    </label>
+                    <label class="radiobox" for="holt">Captain Holt
+                        <input type="radio" id="holt" name="character" value="holt">
+
+                        <span class="checkdot"></span>
+                    </label>
+                    <label class="radiobox" for="terry">Terry
+                        <input type="radio" id="terry" name="character" value="terry">
+
+                        <span class="checkdot"></span>
+                    </label>
+                </section>
+            </section>
+            <section id="complete-checkbox">
+                <p class="question">What's your favourite season? (multiple answers possible)</p>
+                <label class="checkbox" for="one">Season 1
+                    <input type="checkbox" id="one" name="season" value="one">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="two">Season 2
+                    <input type="checkbox" id="two" name="season" value="two">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="three">Season 3
+                    <input type="checkbox" id="three" name="season"
+                           value="three">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="four">Season 4
+                    <input type="checkbox" id="four" name="season"
+                           value="four">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="five">Season 5
+                    <input type="checkbox" id="five" name="season"
+                           value="five">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="six">Season 6
+                    <input type="checkbox" id="six" name="season"
+                           value="six">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="seven">Season 7
+                    <input type="checkbox" id="seven" name="season" value="seven">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox" for="eight">Season 8
+                    <input type="checkbox" id="eight" name="season" value="eight">
+                    <span class="checkmark"></span>
+                </label>
+            </section>
+        </aricle>
+        <textarea id="textarea" name="comment" form="usrform">Enter additional comments here...</textarea><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</article>
+</body>
